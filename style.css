@@ -1,0 +1,462 @@
+:root {
+    --black: #000019;
+    --lightRed: #ec5b53;
+    --danger: #dc3545;
+    --bluedark: #000a2d;
+    --bluelight: #002d5b;
+    --white: #fff;
+    --gray: #464d65;
+    --whiteGray: #e1e1e1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    /* font-family: "Rufina",serif; */
+}
+
+
+
+/* nav bar  */
+
+nav ul {
+    margin-left: 220px;
+    width: 80%;
+
+    text-align: right;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 30px 25px;
+
+    font-weight: 500;
+
+
+}
+
+nav ul li a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--lightRed);
+}
+
+nav ul li.btn {
+    margin-left: 150px;
+}
+
+
+nav ul li input {
+    background-color: var(--lightRed);
+    color: white;
+    width: 230px;
+    text-align: center;
+    height: 50px;
+    border: none;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+nav ul li input:hover {
+    background-color: var(--danger);
+}
+
+
+
+/* header  */
+
+
+
+header {
+    background-image: url(images/h1_hero.jpg);
+    width: 100%;
+    height: 800px;
+    background-position: -150px -130px;
+    position: relative;
+
+}
+
+header div#text {
+    position: absolute;
+    left: 140px;
+    top: 230px;
+    width: 45%;
+}
+
+header div#text span {
+
+    font-size: 18px;
+    color: var(--lightRed);
+}
+
+
+
+header div#text h1 {
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #002d5b;
+
+}
+
+header div#text p {
+    margin-top: 20px;
+    line-height: 30px;
+    color: var(--gray);
+    font-size: 17px;
+}
+
+
+header div#text input {
+    width: 180px;
+    font-size: 22px;
+    margin-top: 30px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 8px;
+
+}
+
+header div#text input[value^='Learn'] {
+    background-color: var(--lightRed);
+    color: var(--white);
+    border: none;
+
+}
+
+header div#text input[value^='Hire'] {
+    border: 1px solid var(--lightRed);
+    background-color: transparent;
+    color: var(--gray);
+
+}
+
+header div#text input:hover {
+    background-color: var(--danger);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+
+/* section 1 */
+
+
+
+main {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* border: 2px solid; */
+}
+
+section {
+    width: 100%;
+    margin: auto;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+section#section1 div {
+    padding: 20px;
+}
+
+section div.left {
+    width: 50%;
+    float: left;
+
+
+}
+
+section div.right {
+    width: 50%;
+    float: right;
+
+
+
+}
+
+
+section#section1 div h3 {
+    width: 85%;
+    color: var(--bluedark);
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+
+footer {
+    color: var(--white);
+    font-size: 22px;
+    text-align: center;
+}
+
+
+footer span {
+    position: relative;
+    top: calc(100% - 50%);
+}
+
+section#section1 div.left h3 {
+    font-size: 30px;
+}
+
+section#section1 div.right h3 {
+    margin-top: 40px;
+    font-size: 40px;
+
+}
+
+section#section1 div.left p {
+    color: var(--bluelight);
+    line-height: 30px;
+    font-size: 16px;
+}
+
+section#section1 div.right p {
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+section#section1 div.right a {
+
+    font-size: 30px;
+    color: var(--bluedark);
+    font-weight: 600;
+
+}
+
+
+
+/* Section 2 */
+
+
+
+section#section2 h2 {
+    font-size: 48px;
+    color: var(--bluedark);
+    font-weight: 600;
+
+}
+
+div.box {
+    margin-top: 70px;
+    height: 400px;
+    width: 30%;
+    border: 2px solid var(--whiteGray);
+    float: left;
+    text-align: center;
+    padding-inline-start: 10px;
+    border-radius: 10px;
+
+
+}
+
+div.box1 {
+
+    margin-left: 1%;
+    margin-right: 0.555%;
+
+}
+
+div.box2 {
+    margin-right: 0.555%;
+    margin-left: 0.555%;
+
+}
+
+div.box3 {
+
+    margin-right: 1%;
+    margin-left: 0.555%;
+
+}
+
+div.cat-icon {
+    background-color: pink;
+    ;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 50px;
+    position: relative;
+}
+
+div.cat-icon span {
+    position: absolute;
+    top: 33px;
+    left: 36px;
+    font-size: 34px;
+    color: var(--danger);
+
+}
+
+div.box h5 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--black);
+}
+
+p {
+    clear: both;
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 2;
+    padding: 20px;
+    font-weight: 500;
+}
+
+
+section#section2 div.box:hover {
+    background-color: var(--danger);
+
+}
+
+section#section2 div.box:hover div.cat-icon {
+    background-color: var(--white);
+}
+
+section#section2 div.box:hover h5 {
+    color: white;
+}
+
+section#section2 div.box:hover p {
+    color: white;
+}
+
+
+
+/* Section 3  */
+
+
+section#section3 h2 {
+
+    font-size: 48px;
+    color: var(--bluedark);
+    font-weight: 600;
+
+}
+
+
+.user .cat-icon {
+    position: static;
+    margin-left: 0;
+    width: 30%;
+    border: none;
+    float: left;
+    background: none;
+
+}
+
+.user h5 {
+    width: 70%;
+    float: left;
+    margin-top: 80px !important;
+    text-align: left;
+}
+
+.user span {
+    position: relative;
+    left: -76px;
+    color: var(--gray);
+}
+
+
+
+
+
+
+/* Section 4 */
+
+
+
+section#section4 h2 {
+
+    font-size: 48px;
+    color: var(--bluedark);
+    font-weight: 600;
+
+
+}
+
+#form1 {
+
+    float: right;
+}
+
+#form1 input {
+    height: 60px;
+
+}
+
+#form1 input,
+#form1 textarea {
+    display: block;
+
+    width: 400px;
+    margin: 20px 0px;
+    background-color: var(--whiteGray);
+    font-weight: 500;
+    color: var(--gray);
+    border: none;
+    padding: 20px;
+
+}
+
+#form1 textarea {
+    height: 150px;
+
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#form1 input[type='button'] {
+    background-color: var(--lightRed);
+    color: var(--white);
+    font-weight: 600;
+}
+
+::placeholder {
+    color: var(--bluedark);
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#form1 input[type='button']:hover {
+    background-color: var(--danger);
+    cursor: pointer;
+}
+
+
+
+
+/* footer  */
+
+
+footer {
+
+    width: 100%;
+    height: 400px;
+    background-color: var(--bluedark);
+
+}
